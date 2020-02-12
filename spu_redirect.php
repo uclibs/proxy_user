@@ -1,4 +1,13 @@
 <?php
   $url = $_GET["spu"];
-  header("Location: http://proxy.libraries.uc.edu/login?url=$url");
+  $http = substr($url,0,4);
+
+
+  if ($http == "http") {
+    $url; }
+  else {
+    $url = "http://".$url; }
+
+
+   header("Location: http://proxy.libraries.uc.edu/login?url=$url"); 
 ?>
