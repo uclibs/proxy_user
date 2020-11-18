@@ -2,7 +2,7 @@
 
 
   <head>
-    <title>Proxy Admin Control Panel</title>
+    <title>Proxy Public Control Panel</title>
     <script type="text/JavaScript">
         function showURL(){
             var message = document.getElementById("spu").value;
@@ -36,20 +36,12 @@
   </head>
   <body>
 
-    <h2>Proxy User Control Panel </h2>
+    <h2>Proxy User Public Control Panel </h2>
 
     <br/>
     <hr>
     <br/>
 
-    <form id=UserForm action="/proxyuser/redirect.php">
-      Username to Audit: <input type="text" name="username" id="username" />
-      <input type="submit" name="action" value="Enter">
-    </form>
-
-    <hr>
-    <br/>
-           
     <form id=SPUForm action="/proxyuser/spu_redirect.php">
       URL to SPU: <input type="text" name="spu" id="spu" />
       <input type="button" onclick="showURL()" value="Generate">
